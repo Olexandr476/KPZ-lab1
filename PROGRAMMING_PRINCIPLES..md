@@ -9,27 +9,24 @@
 Логіка скорочення дробу (знаходження найбільшого спільного дільника та ділення чисельника і знаменника на нього) винесена в окремий приватний метод `Simplify()`. Замість того, щоб писати цей код під час кожної зміни дробу, метод викликається повторно у потрібних місцях.
 * **Файл:** [`Fraction.cs`](https://github.com/Olexandr476/KPZ-lab1/blob/902d1d40691a6ace8a0c51e49992929281bcc5c9/FractionLibrary/Fraction..cs)
 * **Рядки:** * Реалізація методу: [`private void Simplify()`](https://github.com/Olexandr476/KPZ-lab1/blob/eb3ea7f3a6d285865a9bb776fe5f1c75a2af8e89/FractionLibrary/Fraction..cs#L57-L68)
-  * Перевикористання в конструкторі (рядок 25).
-  * Перевикористання у властивості (setter) `Numerator` (рядок 40).
-  * Перевикористання у властивості (setter) `Denominator` (рядок 49).
-
+  
 ## 2. Fail Fast (Швидкий збій)
 **Опис принципу:** Програма повинна якомога раніше повідомляти про стан, який може призвести до помилки, замість того, щоб намагатися продовжити роботу з некоректними даними. Це полегшує пошук та виправлення багів.
 
 **Доказ у коді:**
 Клас `Fraction` не дозволяє створити об'єкт із нульовим знаменником або встановити його в процесі роботи. Помилка `ArgumentException` генерується негайно на етапі ініціалізації або присвоєння. Також миттєво обробляється спроба ділення на дріб з нульовим чисельником.
-* **Файл:** `Fraction.cs`
+* **Файл:** [`Fraction.cs`](https://github.com/Olexandr476/KPZ-lab1/blob/e44bf5fd422f1e67c26d6dc15eee2974e0e4c101/FractionLibrary/Fraction..cs)
 * **Рядки:**
-  * Перевірка в конструкторі: `if (denominator == 0) throw new ArgumentException...` (рядки 21-22).
-  * Перевірка у властивості `Denominator`: `if (value == 0) throw new ArgumentException...` (рядки 46-47).
-  * Перевірка під час ділення (оператор `/`): `if (b.numerator == 0) throw new DivideByZeroException...` (рядки 89-90).
+  * Перевірка в конструкторі: [`tyt`](https://github.com/Olexandr476/KPZ-lab1/blob/e44bf5fd422f1e67c26d6dc15eee2974e0e4c101/FractionLibrary/Fraction..cs#L21-L24).
+  * Перевірка у властивості `Denominator`: [`tyt`](https://github.com/Olexandr476/KPZ-lab1/blob/e44bf5fd422f1e67c26d6dc15eee2974e0e4c101/FractionLibrary/Fraction..cs#L49-L50).
+  * Перевірка під час ділення (оператор `/`): [`tyt`](https://github.com/Olexandr476/KPZ-lab1/blob/e44bf5fd422f1e67c26d6dc15eee2974e0e4c101/FractionLibrary/Fraction..cs#L108-L110).
 
 ## 3. SRP (Single Responsibility Principle - Принцип єдиної відповідальності)
 **Опис принципу:** Кожен клас повинен мати лише одну причину для зміни, тобто виконувати лише одне завдання або відповідати за одну сутність.
 
 **Доказ у коді:**
 Проєкт чітко розділений на два окремі компоненти. Клас `Fraction` відповідає виключно за математичну логіку дробу (зберігання стану, скорочення, арифметичні операції). Він нічого не знає про те, як ці дані виводяться на екран. Вивід даних та взаємодія з користувачем делеговані класу `Program`.
-* **Файли:** * `Fraction.cs` (Клас `Fraction` — обробляє лише математику).
+* **Файли:** * [`Fraction.cs`](https://github.com/Olexandr476/KPZ-lab1/blob/e44bf5fd422f1e67c26d6dc15eee2974e0e4c101/FractionLibrary/Fraction..cs) (Клас `Fraction` — обробляє лише математику).
   * `Program.cs` (Клас `Program` — відповідає за консольний інтерфейс та демонстрацію).
 
 ## 4. Encapsulation (Інкапсуляція)
@@ -37,7 +34,7 @@
 
 **Доказ у коді:**
 Поля чисельника та знаменника закриті модифікатором доступу `private`. Зміна цих значень ззовні можлива лише через публічні властивості, в яких вбудована логіка валідації (захист від знаменника 0) та автоматичного скорочення дробу при будь-якій зміні.
-* **Файл:** `Fraction.cs`
+* **Файл:** [`Fraction.cs`](https://github.com/Olexandr476/KPZ-lab1/blob/e44bf5fd422f1e67c26d6dc15eee2974e0e4c101/FractionLibrary/Fraction..cs)
 * **Рядки:**
-  * Приватні поля: `private int numerator; private int denominator;` (рядки 11-12).
-  * Публічні властивості з контролем доступу: `public int Numerator` та `public int Denominator` (рядки 36-52).
+  * Приватні поля: [`tyt`](https://github.com/Olexandr476/KPZ-lab1/blob/e44bf5fd422f1e67c26d6dc15eee2974e0e4c101/FractionLibrary/Fraction..cs#L11-L12).
+  * Публічні властивості з контролем доступу: [`tyt`](https://github.com/Olexandr476/KPZ-lab1/blob/e44bf5fd422f1e67c26d6dc15eee2974e0e4c101/FractionLibrary/Fraction..cs#L38-L54).
