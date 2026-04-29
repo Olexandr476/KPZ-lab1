@@ -8,6 +8,7 @@ namespace FractionLibrary
 {
     public class Fraction
     {
+        private const string ZeroDenominatorMessage = "Знаменник не може бути нулем.";
         private int numerator;
         private int denominator;
 
@@ -21,7 +22,7 @@ namespace FractionLibrary
         public Fraction(int numerator, int denominator)
         {
             if (denominator == 0)
-                throw new ArgumentException("Знаменник не може бути нулем.");
+                throw new ArgumentException(ZeroDenominatorMessage);
 
             this.numerator = numerator;
             this.denominator = denominator;
@@ -47,7 +48,7 @@ namespace FractionLibrary
             set
             {
                 if (value == 0)
-                    throw new ArgumentException("Знаменник не може бути нулем.");
+                    throw new ArgumentException(ZeroDenominatorMessage);
                 denominator = value;
                 Simplify();
             }
