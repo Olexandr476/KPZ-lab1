@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FractionLibrary
 {
-    public class Fraction
+    public class Fraction : IEquatable<Fraction>
     {
         private const string ZeroDenominatorMessage = "Знаменник не може бути нулем.";
         private int numerator;
@@ -137,11 +137,10 @@ namespace FractionLibrary
         }
 
         // Перевизначення методів Object
-        public override bool Equals(object obj)
+        public bool Equals(Fraction other)
         {
-            if (obj is Fraction other)
-                return this == other;
-            return false;
+            if (other is null) return false;
+            return this.numerator == other.numerator && this.denominator == other.denominator;
         }
 
         public override int GetHashCode()
