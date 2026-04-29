@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ruset\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\ZTU.education\\OOP.labu\\oop-lab9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{749CF3B3-E139-471E-AA8B-8060B4961D06}|FractionLibrary\\FractionLibrary.csproj|c:\\users\\ruset\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\ztu.education\\oop.labu\\oop-lab9\\fractionlibrary\\fraction..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{749CF3B3-E139-471E-AA8B-8060B4961D06}|FractionLibrary\\FractionLibrary.csproj|solutionrelative:fractionlibrary\\fraction..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ACD21C16-2537-4DFD-848C-05F7DD5B3C8C}|FractionDemo\\FractionDemo.csproj|c:\\users\\ruset\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\ztu.education\\oop.labu\\oop-lab9\\fractiondemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACD21C16-2537-4DFD-848C-05F7DD5B3C8C}|FractionDemo\\FractionDemo.csproj|solutionrelative:fractiondemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{749CF3B3-E139-471E-AA8B-8060B4961D06}|FractionLibrary\\FractionLibrary.csproj|c:\\users\\ruset\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\ztu.education\\oop.labu\\oop-lab9\\fractionlibrary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{749CF3B3-E139-471E-AA8B-8060B4961D06}|FractionLibrary\\FractionLibrary.csproj|solutionrelative:fractionlibrary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACD21C16-2537-4DFD-848C-05F7DD5B3C8C}|FractionDemo\\FractionDemo.csproj|c:\\users\\ruset\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\ztu.education\\oop.labu\\oop-lab9\\fractiondemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACD21C16-2537-4DFD-848C-05F7DD5B3C8C}|FractionDemo\\FractionDemo.csproj|solutionrelative:fractiondemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{749CF3B3-E139-471E-AA8B-8060B4961D06}|FractionLibrary\\FractionLibrary.csproj|c:\\users\\ruset\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\ztu.education\\oop.labu\\oop-lab9\\fractionlibrary\\fraction..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749CF3B3-E139-471E-AA8B-8060B4961D06}|FractionLibrary\\FractionLibrary.csproj|solutionrelative:fractionlibrary\\fraction..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,30 +22,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ruset\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\ZTU.education\\OOP.labu\\oop-lab9\\FractionDemo\\Program.cs",
               "RelativeDocumentMoniker": "FractionDemo\\Program.cs",
               "ToolTip": "C:\\Users\\ruset\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\ZTU.education\\OOP.labu\\oop-lab9\\FractionDemo\\Program.cs",
               "RelativeToolTip": "FractionDemo\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwE8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T18:14:56.062Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Fraction..cs",
               "DocumentMoniker": "C:\\Users\\ruset\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\ZTU.education\\OOP.labu\\oop-lab9\\FractionLibrary\\Fraction..cs",
               "RelativeDocumentMoniker": "FractionLibrary\\Fraction..cs",
               "ToolTip": "C:\\Users\\ruset\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\ZTU.education\\OOP.labu\\oop-lab9\\FractionLibrary\\Fraction..cs",
               "RelativeToolTip": "FractionLibrary\\Fraction..cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAHwAAAAAAAAAAADwv50AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T18:13:42.483Z",
               "EditorCaption": ""
