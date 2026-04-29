@@ -146,7 +146,7 @@ namespace FractionLibrary
 
         public override int GetHashCode()
         {
-            return numerator.GetHashCode() ^ denominator.GetHashCode();
+            return HashCode.Combine(numerator, denominator);
         }
 
         // Перевизначення ToString()
